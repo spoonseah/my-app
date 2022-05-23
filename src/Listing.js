@@ -1,12 +1,11 @@
-import Ad from "./Ad";
-import AdBrown from "./AdBrown";
+import CategoryHero from "./CategoryHero";
+import ProductListing from "./ProductListing";
 
 function Listing() {
   return (
     <div style={styles.container}>
-      <Ad />
-      <AdBrown />
       <CategoryHero />
+      <ProductListing />
     </div>
   );
 }

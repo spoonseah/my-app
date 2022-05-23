@@ -16,13 +16,13 @@ function App() {
       <Header />
       <Ad />
       <AdBrown />
+      {/* <Listing /> */}
       <Slider />
       <BannerFeature />
       <BannerFeatureHero />
       <Banner />
       <BannerFeature />
       <Footer />
-      {/* <Listing /> */}
     </div>
   );
 }
