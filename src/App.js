@@ -8,6 +8,7 @@ import Banner from "./Banner";
 import BannerFeature from "./BannerFeature";
 import BannerFeatureHero from "./BannerFeatureHero";
 import Footer from "./Footer";
+import Listing from "./Listing";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Banner />
       <BannerFeature />
       <Footer />
+      {/* <Listing /> */}
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import Hamburger from "./Hamburger";
+
 function Header() {
   return (
     <div style={styles.container}>
@@ -10,16 +12,6 @@ function Header() {
       <div>
         <SearchCart />
       </div>
-    </div>
-  );
-}
-
-function Hamburger() {
-  return (
-    <div style={styles.hamburger}>
-      <div style={styles.patty}></div>
-      <div style={{ ...styles.patty, ...styles.middlePatty }}></div>
-      <div style={styles.patty}></div>
     </div>
   );
 }
