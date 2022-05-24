@@ -1,28 +1,26 @@
 import React, { useState } from "react";
 
-function Hamburger() {
-  const [openSideBar, setOpenSideBar] = useState(false);
+function Hamburger2() {
+  const [drawer, setDrawer] = useState("styles.close");
+  const handleClick = () => {
+    setDrawer("styles.open");
+  };
+
   return (
-    <div style={styles.hamburger} onClick={() => setOpenSideBar(!openSideBar)}>
+    <div style={styles.hamburger} onClick={handleClick}>
       <div style={styles.patty}></div>
       <div style={{ ...styles.patty, ...styles.middlePatty }}></div>
       <div style={styles.patty}></div>
-      {openSideBar && <SideMenu />}
-    </div>
-  );
-}
 
-function SideMenu() {
-  return (
-    <div style={styles.container}>
-      <ul style={styles.ul}>
-        <li style={styles.li}>ABOUT</li>
-        <li style={styles.li}>LISTING</li>
-        <li style={styles.li}>ABOUT</li>
-        <li style={styles.li}>ABOUT</li>
-      </ul>
-      <div onClick={() => setOpenSideBar(!openSideBar)} style={styles.closebtn}>
-        X
+      <div style={{ ...styles.container, ...styles.close }}>
+        <ul style={styles.ul}>
+          <li style={styles.li}>ABOUT</li>
+          <li style={styles.li}>LISTING</li>
+          <li style={styles.li}>ABOUT</li>
+          <li style={styles.li}>ABOUT</li>
+        </ul>
+        <div>X</div>
+        {drawer}
       </div>
     </div>
   );
@@ -50,6 +48,12 @@ const styles = {
     boxShadow: "5px 5px 5px rgba(0,0,0,0.3)",
     transition: "1s",
   },
+  open: {
+    left: "0",
+  },
+  close: {
+    left: "-95%",
+  },
   ul: {
     padding: "0",
     margin: "0",
@@ -66,4 +70,4 @@ const styles = {
   },
 };
 
-export default Hamburger;
+export default Hamburger2;

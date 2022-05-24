@@ -1,10 +1,10 @@
-import Hamburger from "./Hamburger";
+import Hamburger2 from "./Hamburger2";
 
 function Header() {
   return (
     <div style={styles.container}>
       <div>
-        <Hamburger />
+        <Hamburger2 />
       </div>
       <div>
         <Logo />
